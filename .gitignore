@@ -1,41 +1,75 @@
-# Prerequisites
-*.d
-
 # Compiled Object files
-*.slo
-*.lo
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
 
 # Executables
 *.exe
 *.out
-*.app
+a.out
 
-# debug information files
-*.dwo
+# Libraries
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Intermediate build files (e.g., from Make, CMake, Visual Studio)
+*.ilk
+*.pdb
+*.exp
+*.idb
+*.ipch
+*.pch
+*.ncb
+*.suo
+*.user
+*.aps
+*.bsc
+*.sbr
+*.res
+*.tds
+*.bak
+*.log
+*.tmp
+*.vspscc
+*.vssscc
+*.vsp
+*.vspx
+*.psess
+*.ipr
+*.iws
+*.iml
+
+# Build directories
+build/
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+cmake-build-*/
+
+# IDE specific files (e.g., Visual Studio, CLion, VS Code)
+.vscode/
+.idea/
+*.sln.docstates
+*.VC.opendb
+*.VC.db
+*.vcxproj.user
+*.vcxproj.filters
+*.vcxproj.opendb
+
+# Doxygen related files
+html/
+latex/
+
+# Other temporary or generated files
+*~
+*.swp
+*.bak
+*.orig
+*.rej
+*.swo
+*.DS_Store
+Thumbs.db
