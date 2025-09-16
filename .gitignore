@@ -39,3 +39,11 @@
 
 # debug information files
 *.dwo
+# Visual Studio user-specific and cache folders
+.vs/
+vs/
+x64/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
