@@ -9,6 +9,8 @@ class Euler {
 public:
     explicit Euler(Graph& g);     // was: Euler(const Graph& g);
     void runEfficientAlgorithm();
+    void runInefficientAlgorithm();
+
     bool checkEulerian();
 private:
     void dfs(int u, std::vector<bool>& visited);

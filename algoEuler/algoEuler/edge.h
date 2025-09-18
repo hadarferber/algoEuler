@@ -20,10 +20,12 @@ public:
 	// Functions
 	void set(Node* i,Node* j);
 	void setCopy(Edge* edge);
-	void markAsVisited(bool isUsed);
+	void markAsVisited();
 	Edge* getCopy();
 	Node* getNeighbor();
 	bool isVisited();
+	bool isVisitedInefficient();
+
 
 };
 #endif

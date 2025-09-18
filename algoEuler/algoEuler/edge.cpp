@@ -20,11 +20,30 @@ Node* Edge::getNeighbor() {
 }
 
 bool Edge::isVisited() {
-	return this->visited;
+	return this->visited || (this->copy && this->copy->visited);
 }
 
-
-void Edge::markAsVisited(bool isUsed)
+bool Edge::isVisitedInefficient() 
 {
-	this->visited = isUsed;
+    if (this->visited) 
+        return true;
+
+    if (!this->j) 
+        return false;
+
+    std::vector<Edge*>& jEdges = this->j->getEdges();
+
+    for (Edge* e : jEdges) 
+    {
+        if (e->getNeighbor() == this->i) 
+        {
+            return e->visited;
+        }
+    }
+    return false;
+}
+
+void Edge::markAsVisited()
+{
+	this->visited = true;
 }

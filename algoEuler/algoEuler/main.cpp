@@ -63,7 +63,7 @@ int main() {
 			euler.runEfficientAlgorithm();
 		}
 		else if (efficientOrNotChoice == 2) {
-			//run not efficient
+			euler.runInefficientAlgorithm();
 		}
 	}
 	else if (runTimeChoice == 1) {
